@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 
 // HARDCODED API URL - REPLACE WITH YOUR RENDER BACKEND URL
-const API_URL = 'https://lost-found-backend-vwhf.onrender.com';
+const API_URL = 'https://lost-found-backend-vwhf.onrender.com/api';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/register`, {
+      const response = await axios.post(`${API_URL}/register`, { 
         name: formData.name,
         email: formData.email,
         password: formData.password

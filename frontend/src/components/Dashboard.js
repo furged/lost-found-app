@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 // HARDCODED API URL - REPLACE WITH YOUR RENDER BACKEND URL
-const API_URL = 'https://lost-found-backend-vwhf.onrender.com';
+const API_URL = 'https://lost-found-backend-vwhf.onrender.com/api';
 
 const Dashboard = () => {
   const navigate = useNavigate();
